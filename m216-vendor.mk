@@ -79,6 +79,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/lge/m216/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/m216/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
+    vendor/lge/m216/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
     vendor/lge/m216/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/m216/proprietary/lib/libvss_common_idl.so:system/lib/libvss_common_idl.so \
     vendor/lge/m216/proprietary/lib/libvss_common_iface.so:system/lib/libvss_common_iface.so \
@@ -272,7 +273,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/lge/m216/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/lge/m216/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
-    vendor/lge/m216/proprietary/vendor/lib/libSJlowlight.so:system/vendor/lib/libSJlowlight.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
     vendor/lge/m216/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
