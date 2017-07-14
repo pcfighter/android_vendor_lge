@@ -93,11 +93,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/bin/thermal-engine:system/vendor/bin/thermal-engine \
     vendor/lge/m216/proprietary/vendor/firmware/BCM20795A1_001.002.00105_LiteFirmware_Unsigned_configdata.ncd:system/vendor/firmware/BCM20795A1_001.002.00105_LiteFirmware_Unsigned_configdata.ncd \
     vendor/lge/m216/proprietary/vendor/firmware/BCM20795A2_001.003.025.0005.0049_Generic_I2C_NCD_Signed_configdata.ncd:system/vendor/firmware/BCM20795A2_001.003.025.0005.0049_Generic_I2C_NCD_Signed_configdata.ncd \
-    vendor/lge/m216/proprietary/vendor/firmware/keymaster/keymaster.b00:system/vendor/firmware/keymaster/keymaster.b00 \
-    vendor/lge/m216/proprietary/vendor/firmware/keymaster/keymaster.b01:system/vendor/firmware/keymaster/keymaster.b01 \
-    vendor/lge/m216/proprietary/vendor/firmware/keymaster/keymaster.b02:system/vendor/firmware/keymaster/keymaster.b02 \
-    vendor/lge/m216/proprietary/vendor/firmware/keymaster/keymaster.b03:system/vendor/firmware/keymaster/keymaster.b03 \
-    vendor/lge/m216/proprietary/vendor/firmware/keymaster/keymaster.mdt:system/vendor/firmware/keymaster/keymaster.mdt \
     vendor/lge/m216/proprietary/vendor/lib/egl/eglSubDriverAndroid.so:system/vendor/lib/egl/eglSubDriverAndroid.so \
     vendor/lge/m216/proprietary/vendor/lib/egl/eglsubAndroid.so:system/vendor/lib/egl/eglsubAndroid.so \
     vendor/lge/m216/proprietary/vendor/lib/egl/libEGL_adreno.so:system/vendor/lib/egl/libEGL_adreno.so \
