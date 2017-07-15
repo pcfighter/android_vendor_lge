@@ -268,6 +268,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/lge/m216/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/lge/m216/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
+    vendor/lge/m216/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
+    vendor/lge/m216/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/lge/m216/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
