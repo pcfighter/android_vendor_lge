@@ -30,6 +30,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/bin/time_daemon:system/bin/time_daemon \
     vendor/lge/m216/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/m216/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
+    vendor/lge/m216/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/m216/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/m216/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
     vendor/lge/m216/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
