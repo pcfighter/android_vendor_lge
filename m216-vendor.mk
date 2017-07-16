@@ -206,6 +206,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/liblocationservice.so:system/vendor/lib/liblocationservice.so \
     vendor/lge/m216/proprietary/vendor/lib/liblocationservice_glue.so:system/vendor/lib/liblocationservice_glue.so \
     vendor/lge/m216/proprietary/vendor/lib/liblowi_client.so:system/vendor/lib/liblowi_client.so \
+    vendor/lge/m216/proprietary/vendor/lib/liblqe.so:system/vendor/lib/liblqe.so \
     vendor/lge/m216/proprietary/vendor/lib/libmdmdetect.so:system/vendor/lib/libmdmdetect.so \
     vendor/lge/m216/proprietary/vendor/lib/libmm-abl-oem.so:system/vendor/lib/libmm-abl-oem.so \
     vendor/lge/m216/proprietary/vendor/lib/libmm-abl.so:system/vendor/lib/libmm-abl.so \
