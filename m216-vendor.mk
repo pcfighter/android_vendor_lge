@@ -66,7 +66,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/lib/hw/camera.msm8916.so:system/lib/hw/camera.msm8916.so \
     vendor/lge/m216/proprietary/lib/hw/gps.default.so:system/lib/hw/gps.default.so \
     vendor/lge/m216/proprietary/lib/hw/sensors.msm8916.so:system/lib/hw/sensors.msm8916.so \
-    vendor/lge/m216/proprietary/lib/hw/nfc_lg.default.so:system/lib/hw/nfc_lg.default.so \
     vendor/lge/m216/proprietary/lib/libHDR.so:system/lib/libHDR.so \
     vendor/lge/m216/proprietary/lib/libOmxVdecHevc.so:system/lib/libOmxVdecHevc.so \
     vendor/lge/m216/proprietary/lib/libgps.utils.so:system/lib/libgps.utils.so \
