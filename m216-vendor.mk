@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/bin/rmt_storage:system/bin/rmt_storage \
     vendor/lge/m216/proprietary/bin/sensord:system/bin/sensord \
     vendor/lge/m216/proprietary/bin/time_daemon:system/bin/time_daemon \
+    vendor/lge/m216/proprietary/bin/vm_bms:system/bin/vm_bms \
     vendor/lge/m216/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/m216/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
     vendor/lge/m216/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
