@@ -16,7 +16,12 @@
 
 PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/bin/adsprpcd:system/bin/adsprpcd \
+    vendor/lge/m216/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/m216/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+    vendor/lge/m216/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
+    vendor/lge/m216/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/lge/m216/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/lge/m216/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
     vendor/lge/m216/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/m216/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/lge/m216/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -31,7 +36,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/bin/vm_bms:system/bin/vm_bms \
     vendor/lge/m216/proprietary/bin/xtwifi-client:system/bin/xtwifi-client \
     vendor/lge/m216/proprietary/bin/xtwifi-inet-agent:system/bin/xtwifi-inet-agent \
-    vendor/lge/m216/proprietary/bin/fm_qsoc_patches:system/bin/fm_qsoc_patches \
     vendor/lge/m216/proprietary/etc/acdbdata/Bluetooth_cal.acdb:system/etc/acdbdata/Bluetooth_cal.acdb \
     vendor/lge/m216/proprietary/etc/acdbdata/General_cal.acdb:system/etc/acdbdata/General_cal.acdb \
     vendor/lge/m216/proprietary/etc/acdbdata/Global_cal.acdb:system/etc/acdbdata/Global_cal.acdb \
@@ -58,8 +62,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/lge/m216/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/lge/m216/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+    vendor/lge/m216/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
+    vendor/lge/m216/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
     vendor/lge/m216/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/lge/m216/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+    vendor/lge/m216/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/lge/m216/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/lge/m216/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/lge/m216/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
@@ -81,7 +88,6 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/lib/libqomx_core.so:system/lib/libqomx_core.so \
     vendor/lge/m216/proprietary/lib/libril.so:system/lib/libril.so \
     vendor/lge/m216/proprietary/lib/librmnetctl.so:system/lib/librmnetctl.so \
-    vendor/lge/m216/proprietary/lib/libSJlowlight.so:system/lib/libSJlowlight.so \
     vendor/lge/m216/proprietary/lib/libuicc.so:system/lib/libuicc.so \
     vendor/lge/m216/proprietary/lib/libvss_common_idl.so:system/lib/libvss_common_idl.so \
     vendor/lge/m216/proprietary/lib/libvss_common_iface.so:system/lib/libvss_common_iface.so \
@@ -109,6 +115,24 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/egl/libRBGLESv2_adreno.so:system/vendor/lib/egl/libRBGLESv2_adreno.so \
     vendor/lge/m216/proprietary/vendor/lib/egl/libq3dtools_adreno.so:system/vendor/lib/egl/libq3dtools_adreno.so \
     vendor/lge/m216/proprietary/vendor/lib/hw/flp.default.so:system/vendor/lib/hw/flp.default.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/lge/m216/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/lge/m216/proprietary/vendor/lib/libC2D2.so:system/vendor/lib/libC2D2.so \
     vendor/lge/m216/proprietary/vendor/lib/libCB.so:system/vendor/lib/libCB.so \
     vendor/lge/m216/proprietary/vendor/lib/libExtendedExtractor.so:system/vendor/lib/libExtendedExtractor.so \
@@ -121,6 +145,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/libOpenCL.so:system/vendor/lib/libOpenCL.so \
     vendor/lge/m216/proprietary/vendor/lib/libQSEEComAPI.so:system/vendor/lib/libQSEEComAPI.so \
     vendor/lge/m216/proprietary/vendor/lib/libRSDriver_adreno.so:system/vendor/lib/libRSDriver_adreno.so \
+    vendor/lge/m216/proprietary/vendor/lib/libSJlowlight.so:system/vendor/lib/libSJlowlight.so \
     vendor/lge/m216/proprietary/vendor/lib/libTimeService.so:system/vendor/lib/libTimeService.so \
     vendor/lge/m216/proprietary/vendor/lib/libWVStreamControlAPI_L3.so:system/vendor/lib/libWVStreamControlAPI_L3.so \
     vendor/lge/m216/proprietary/vendor/lib/libacdb-fts.so:system/vendor/lib/libacdb-fts.so \
@@ -198,6 +223,8 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/lge/m216/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/lge/m216/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+    vendor/lge/m216/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/lge/m216/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
     vendor/lge/m216/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/lge/m216/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/lge/m216/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -262,6 +289,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/lge/m216/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lge/m216/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+    vendor/lge/m216/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
     vendor/lge/m216/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/lge/m216/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lge/m216/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
@@ -269,14 +297,14 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
     vendor/lge/m216/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/lge/m216/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
-    vendor/lge/m216/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/lge/m216/proprietary/vendor/lib/libsecureui.so:system/vendor/lib/libsecureui.so \
+    vendor/lge/m216/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
     vendor/lge/m216/proprietary/vendor/lib/libssd.so:system/vendor/lib/libssd.so \
     vendor/lge/m216/proprietary/vendor/lib/libsystem_health_mon.so:system/vendor/lib/libsystem_health_mon.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalclient.so:system/vendor/lib/libthermalclient.so \
     vendor/lge/m216/proprietary/vendor/lib/libthermalioctl.so:system/vendor/lib/libthermalioctl.so \
-    vendor/lge/m216/proprietary/vendor/lib/libtime_genoff.so:system/vendor/lib/libtime_genoff.so \
     vendor/lge/m216/proprietary/vendor/lib/libulp2.so:system/vendor/lib/libulp2.so \
+    vendor/lge/m216/proprietary/vendor/lib/libvoice-svc.so:system/vendor/lib/libvoice-svc.so \
     vendor/lge/m216/proprietary/vendor/lib/libwvdrm_L3.so:system/vendor/lib/libwvdrm_L3.so \
     vendor/lge/m216/proprietary/vendor/lib/libwvm.so:system/vendor/lib/libwvm.so \
     vendor/lge/m216/proprietary/vendor/lib/libxml.so:system/vendor/lib/libxml.so \
@@ -288,8 +316,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/m216/proprietary/vendor/lib/soundfx/libqcvirt.so:system/vendor/lib/soundfx/libqcvirt.so
 
 PRODUCT_PACKAGES += \
+    libtime_genoff \
     TimeService \
     com.qualcomm.location \
     qcrilmsgtunnel \
+    ims \
+    imssettings \
+    imscmlibrary \
     qcnvitems \
     qcrilhook
