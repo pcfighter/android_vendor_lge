@@ -144,7 +144,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517.so:system/vendor/lib/libactuator_wv517.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517_camcorder.so:system/vendor/lib/libactuator_wv517_camcorder.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517_camera.so:system/vendor/lib/libactuator_wv517_camera.so \
-libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_camcorder.so:system/vendor/lib/libactuator_zc533_camcorder.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_camera.so:system/vendor/lib/libactuator_zc533__camera.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_hi842.so:system/vendor/lib/libactuator_zc533_hi842.so \
@@ -186,25 +186,25 @@ libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
 vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
-libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
-libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
-libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
-libchromatix_hi191_snapshot.so:system/vendor/lib/libchromatix_hi191_snapshot.so \
-libchromatix_hi191_snapshot_sk.so:system/vendor/lib/libchromatix_hi191_snapshot_sk.so \
-libchromatix_hi544_common.so:system/vendor/lib/libchromatix_hi544_common.so \
-libchromatix_hi544_default_video.so:system/vendor/lib/libchromatix_hi544_default_video.so \
-libchromatix_hi544_preview.so:system/vendor/lib/libchromatix_hi544_preview.so \
-libchromatix_hi544_snapshot.so:system/vendor/lib/libchromatix_hi544_snapshot.so \
-libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
-libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
-libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
-libchromatix_imx219_imtech_preview.so:system/vendor/lib/libchromatix_imx219_imtech_preview.so \
-libchromatix_imx219_imtech_skt_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so \
-libchromatix_imx219_imtech_snapshot.so:system/vendor/lib/libchromatix_imx219_imtech_snapshot.so \
-libchromatix_imx219_mms_video.so:system/vendor/lib/libchromatix_imx219_mms_video.so \
-libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
-libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
-libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_snapshot.so:system/vendor/lib/libchromatix_hi191_snapshot.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_snapshot_sk.so:system/vendor/lib/libchromatix_hi191_snapshot_sk.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi544_common.so:system/vendor/lib/libchromatix_hi544_common.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi544_default_video.so:system/vendor/lib/libchromatix_hi544_default_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi544_preview.so:system/vendor/lib/libchromatix_hi544_preview.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi544_snapshot.so:system/vendor/lib/libchromatix_hi544_snapshot.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_imtech_preview.so:system/vendor/lib/libchromatix_imx219_imtech_preview.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_imtech_snapshot.so:system/vendor/lib/libchromatix_imx219_imtech_snapshot.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_mms_video.so:system/vendor/lib/libchromatix_imx219_mms_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
     vendor/lge/c70n/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/c70n/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
