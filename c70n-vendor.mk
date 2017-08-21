@@ -144,6 +144,9 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517.so:system/vendor/lib/libactuator_wv517.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517_camcorder.so:system/vendor/lib/libactuator_wv517_camcorder.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_wv517_camera.so:system/vendor/lib/libactuator_wv517_camera.so \
+libactuator_zc533.so:system/vendor/lib/libactuator_zc533.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_camcorder.so:system/vendor/lib/libactuator_zc533_camcorder.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_camera.so:system/vendor/lib/libactuator_zc533__camera.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_hi842.so:system/vendor/lib/libactuator_zc533_hi842.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_hi842_camcorder.so:system/vendor/lib/libactuator_zc533_hi842_camcorder.so \
     vendor/lge/c70n/proprietary/vendor/lib/libactuator_zc533_hi842_camera.so:system/vendor/lib/libactuator_zc533_hi842_camera.so \
@@ -182,7 +185,26 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/lib/libchromatix_ov8858_liveshot.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
-    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
+vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
+libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
+libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
+libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
+libchromatix_hi191_snapshot.so:system/vendor/lib/libchromatix_hi191_snapshot.so \
+libchromatix_hi191_snapshot_sk.so:system/vendor/lib/libchromatix_hi191_snapshot_sk.so \
+libchromatix_hi544_common.so:system/vendor/lib/libchromatix_hi544_common.so \
+libchromatix_hi544_default_video.so:system/vendor/lib/libchromatix_hi544_default_video.so \
+libchromatix_hi544_preview.so:system/vendor/lib/libchromatix_hi544_preview.so \
+libchromatix_hi544_snapshot.so:system/vendor/lib/libchromatix_hi544_snapshot.so \
+libchromatix_imx219_common.so:system/vendor/lib/libchromatix_imx219_common.so \
+libchromatix_imx219_imtech_common.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
+libchromatix_imx219_imtech_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_default_video.so \
+libchromatix_imx219_imtech_preview.so:system/vendor/lib/libchromatix_imx219_imtech_preview.so \
+libchromatix_imx219_imtech_skt_default_video.so:system/vendor/lib/libchromatix_imx219_imtech_skt_default_video.so \
+libchromatix_imx219_imtech_snapshot.so:system/vendor/lib/libchromatix_imx219_imtech_snapshot.so \
+libchromatix_imx219_mms_video.so:system/vendor/lib/libchromatix_imx219_mms_video.so \
+libchromatix_imx219_preview.so:system/vendor/lib/libchromatix_imx219_preview.so \
+libchromatix_imx219_skt_default_video.so:system/vendor/lib/libchromatix_imx219_skt_default_video.so \
+libchromatix_imx219_snapshot_panorama.so:system/vendor/lib/libchromatix_imx219_imtech_common.so \
     vendor/lge/c70n/proprietary/vendor/lib/libcneapiclient.so:system/vendor/lib/libcneapiclient.so \
     vendor/lge/c70n/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
@@ -234,12 +256,22 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_imglib.so:system/vendor/lib/libmmcamera_imglib.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_mn34153.so:system/vendor/lib/libmmcamera_mn34153.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_ov8858.so:system/vendor/lib/libmmcamera_ov8858.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_ov8858_eeprom.so:system/vendor/lib/libmmcamera_ov8858_eeprom.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_pdaf.so:system/vendor/lib/libmmcamera_pdaf.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_pdafcamif.so:system/vendor/lib/libmmcamera_pdafcamif.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_tintless_algo.so:system/vendor/lib/libmmcamera_tintless_algo.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_tintless_bg_pca_algo.so:system/vendor/lib/libmmcamera_tintless_bg_pca_algo.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_wavelet_lib.so:system/vendor/lib/libmmcamera_wavelet_lib.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_zc533_eeprom.so:system/vendor/lib/libmmcamera_zc533_eeprom.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_hi191.so:system/vendor/lib/libmmcamera_hi191.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_hi544.so:system/vendor/lib/libmmcamera_hi544.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_hi544_eeprom.so:system/vendor/lib/libmmcamera_hi544_eeprom.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_hi841.so:system/vendor/lib/libmmcamera_hi841.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_hi841_eeprom.so:system/vendor/lib/libmmcamera_hi841_eeprom.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_imx219.so:system/vendor/lib/libmmcamera_imx219.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_imx219_eeprom.so:system/vendor/lib/libmmcamera_imx219_eeprom.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libmmcamera_mt9m114.so:system/vendor/lib/libmmcamera_mt9m114.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmipl.so:system/vendor/lib/libmmipl.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmjpeg.so:system/vendor/lib/libmmjpeg.so \
     vendor/lge/c70n/proprietary/vendor/lib/libmmosal.so:system/vendor/lib/libmmosal.so \
