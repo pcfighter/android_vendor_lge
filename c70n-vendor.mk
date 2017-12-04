@@ -17,6 +17,10 @@
 PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/bin/adsprpcd:system/bin/adsprpcd \
     vendor/lge/c70n/proprietary/bin/hci_qcomm_init:system/bin/hci_qcomm_init \
+	vendor/lge/c70n/proprietary/bin/imscmservice:system/bin/imscmservice \
+    vendor/lge/c70n/proprietary/bin/imsdatadaemon:system/bin/imsdatadaemon \
+    vendor/lge/c70n/proprietary/bin/imsqmidaemon:system/bin/imsqmidaemon \
+    vendor/lge/c70n/proprietary/bin/ims_rtp_daemon:system/bin/ims_rtp_daemon \
     vendor/lge/c70n/proprietary/bin/irsc_util:system/bin/irsc_util \
     vendor/lge/c70n/proprietary/bin/mm-pp-daemon:system/bin/mm-pp-daemon \
     vendor/lge/c70n/proprietary/bin/mm-qcamera-daemon:system/bin/mm-qcamera-daemon \
@@ -58,8 +62,11 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/etc/izat.conf:system/etc/izat.conf \
     vendor/lge/c70n/proprietary/etc/lowi.conf:system/etc/lowi.conf \
     vendor/lge/c70n/proprietary/etc/permissions/com.qualcomm.location.xml:system/etc/permissions/com.qualcomm.location.xml \
+	vendor/lge/c70n/proprietary/etc/permissions/imscm.xml:system/etc/permissions/imscm.xml \
+    vendor/lge/c70n/proprietary/etc/permissions/ims.xml:system/etc/permissions/ims.xml \
     vendor/lge/c70n/proprietary/etc/permissions/qcnvitems.xml:system/etc/permissions/qcnvitems.xml \
     vendor/lge/c70n/proprietary/etc/permissions/qcrilhook.xml:system/etc/permissions/qcrilhook.xml \
+	vendor/lge/c70n/proprietary/etc/permissions/qti_permissions.xml:system/etc/permissions/qti_permissions.xml \
     vendor/lge/c70n/proprietary/etc/sap.conf:system/etc/sap.conf \
     vendor/lge/c70n/proprietary/etc/xtra_root_cert.pem:system/etc/xtra_root_cert.pem \
     vendor/lge/c70n/proprietary/etc/xtwifi.conf:system/etc/xtwifi.conf \
@@ -186,7 +193,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_liveshot.so:system/vendor/lib/libchromatix_ov8858_liveshot.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_preview.so:system/vendor/lib/libchromatix_ov8858_preview.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_snapshot.so:system/vendor/lib/libchromatix_ov8858_snapshot.so \
-vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/lib/libchromatix_ov8858_vt.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_common.so:system/vendor/lib/libchromatix_hi191_common.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_default_video.so:system/vendor/lib/libchromatix_hi191_default_video.so \
     vendor/lge/c70n/proprietary/vendor/lib/libchromatix_hi191_preview.so:system/vendor/lib/libchromatix_hi191_preview.so \
@@ -219,6 +226,7 @@ vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/l
     vendor/lge/c70n/proprietary/vendor/lib/libconfigdb.so:system/vendor/lib/libconfigdb.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdataitems.so:system/vendor/lib/libdataitems.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdiag.so:system/vendor/lib/libdiag.so \
+	vendor/lge/c70n/proprietary/vendor/lib/lib-dplmedia.so:system/vendor/lib/lib-dplmedia.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdisp-aba.so:system/vendor/lib/libdisp-aba.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdrmdecrypt.so:system/vendor/lib/libdrmdecrypt.so \
     vendor/lge/c70n/proprietary/vendor/lib/libdrmfs.so:system/vendor/lib/libdrmfs.so \
@@ -230,6 +238,19 @@ vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/l
     vendor/lge/c70n/proprietary/vendor/lib/libgeofence.so:system/vendor/lib/libgeofence.so \
     vendor/lge/c70n/proprietary/vendor/lib/libgsl.so:system/vendor/lib/libgsl.so \
     vendor/lge/c70n/proprietary/vendor/lib/libidl.so:system/vendor/lib/libidl.so \
+	vendor/lge/c70n/proprietary/vendor/lib/libimscamera_jni.so:system/vendor/lib/libimscamera_jni.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsdpl.so:system/vendor/lib/lib-imsdpl.so \
+    vendor/lge/c70n/proprietary/vendor/lib/libimsmedia_jni.so:system/vendor/lib/libimsmedia_jni.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsqimf.so:system/vendor/lib/lib-imsqimf.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsrcscmclient.so:system/vendor/lib/lib-imsrcscmclient.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-ims-rcscmjni.so:system/vendor/lib/lib-ims-rcscmjni.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsrcscmservice.so:system/vendor/lib/lib-imsrcscmservice.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsrcscm.so:system/vendor/lib/lib-imsrcscm.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsrcs.so:system/vendor/lib/lib-imsrcs.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsSDP.so:system/vendor/lib/lib-imsSDP.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imss.so:system/vendor/lib/lib-imss.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsvt.so:system/vendor/lib/lib-imsvt.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-imsxml.so:system/vendor/lib/lib-imsxml.so \
     vendor/lge/c70n/proprietary/vendor/lib/libizat_core.so:system/vendor/lib/libizat_core.so \
     vendor/lge/c70n/proprietary/vendor/lib/libjpegdhw.so:system/vendor/lib/libjpegdhw.so \
     vendor/lge/c70n/proprietary/vendor/lib/libjpegehw.so:system/vendor/lib/libjpegehw.so \
@@ -304,11 +325,18 @@ vendor/lge/c70n/proprietary/vendor/lib/libchromatix_ov8858_vt.so:system/vendor/l
     vendor/lge/c70n/proprietary/vendor/lib/libqomx_jpegenc.so:system/vendor/lib/libqomx_jpegenc.so \
     vendor/lge/c70n/proprietary/vendor/lib/libqti-perfd-client.so:system/vendor/lib/libqti-perfd-client.so \
     vendor/lge/c70n/proprietary/vendor/lib/libquipc_os_api.so:system/vendor/lib/libquipc_os_api.so \
+	vendor/lge/c70n/proprietary/vendor/lib/librcc.so:system/vendor/lib/librcc.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-rcsimssjni.so:system/vendor/lib/lib-rcsimssjni.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-rcsjni.so:system/vendor/lib/lib-rcsjni.so \
     vendor/lge/c70n/proprietary/vendor/lib/libril-qc-qmi-1.so:system/vendor/lib/libril-qc-qmi-1.so \
     vendor/lge/c70n/proprietary/vendor/lib/libril-qcril-hook-oem.so:system/vendor/lib/libril-qcril-hook-oem.so \
     vendor/lge/c70n/proprietary/vendor/lib/librpmb.so:system/vendor/lib/librpmb.so \
     vendor/lge/c70n/proprietary/vendor/lib/librs_adreno.so:system/vendor/lib/librs_adreno.so \
     vendor/lge/c70n/proprietary/vendor/lib/librs_adreno_sha1.so:system/vendor/lib/librs_adreno_sha1.so \
+	vendor/lge/c70n/proprietary/vendor/lib/lib-rtpcommon.so:system/vendor/lib/lib-rtpcommon.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-rtpcore.so:system/vendor/lib/lib-rtpcore.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-rtpdaemoninterface.so:system/vendor/lib/lib-rtpdaemoninterface.so \
+    vendor/lge/c70n/proprietary/vendor/lib/lib-rtpsl.so:system/vendor/lib/lib-rtpsl.so \
     vendor/lge/c70n/proprietary/vendor/lib/libsc-a3xx.so:system/vendor/lib/libsc-a3xx.so \
     vendor/lge/c70n/proprietary/vendor/lib/libscale.so:system/vendor/lib/libscale.so \
     vendor/lge/c70n/proprietary/vendor/lib/libsmemlog.so:system/vendor/lib/libsmemlog.so \
@@ -333,5 +361,8 @@ PRODUCT_PACKAGES += \
     TimeService \
     com.qualcomm.location \
     qcrilmsgtunnel \
+	ims \
+    imssettings \
+    imscmlibrary \
     qcnvitems \
     qcrilhook
